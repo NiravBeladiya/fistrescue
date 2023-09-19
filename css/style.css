@@ -1,0 +1,767 @@
+:root {
+    --org: #F6821F;
+    --darkorg: #F5821F;
+    --lightorg:FFBE87;
+    --darkblue: #121F48;
+    --perpal: #161C3C;
+    --blue: #18204e;
+    --skyblue: #B7C1EB;
+    --lightskyblue: #F3F5FF;
+    --white: #ffff;
+}
+
+@font-face {
+    font-family: 'Bai Jamjuree';
+    src: url('../fonts/BaiJamjuree-Medium.woff2') format('woff2'),
+        url('../fonts/BaiJamjuree-Medium.woff') format('woff'),
+        url('../fonts/BaiJamjuree-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bai Jamjuree';
+    src: url('../fonts/BaiJamjuree-LightItalic.woff2') format('woff2'),
+        url('../fonts/BaiJamjuree-LightItalic.woff') format('woff'),
+        url('../fonts/BaiJamjuree-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bai Jamjuree';
+    src: url('../fonts/BaiJamjuree-MediumItalic.woff2') format('woff2'),
+        url('../fonts/BaiJamjuree-MediumItalic.woff') format('woff'),
+        url('../fonts/BaiJamjuree-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bai Jamjuree';
+    src: url('../fonts/BaiJamjuree-ExtraLight.woff2') format('woff2'),
+        url('../fonts/BaiJamjuree-ExtraLight.woff') format('woff'),
+        url('../fonts/BaiJamjuree-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bai Jamjuree';
+    src: url('../fonts/BaiJamjuree-Bold.woff2') format('woff2'),
+        url('../fonts/BaiJamjuree-Bold.woff') format('woff'),
+        url('../fonts/BaiJamjuree-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bai Jamjuree';
+    src: url('../fonts/BaiJamjuree-Regular.woff2') format('woff2'),
+        url('../fonts/BaiJamjuree-Regular.woff') format('woff'),
+        url('../fonts/BaiJamjuree-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bai Jamjuree';
+    src: url('../fonts/BaiJamjuree-SemiBold.woff2') format('woff2'),
+        url('../fonts/BaiJamjuree-SemiBold.woff') format('woff'),
+        url('../fonts/BaiJamjuree-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bai Jamjuree';
+    src: url('../fonts/BaiJamjuree-Light.woff2') format('woff2'),
+        url('../fonts/BaiJamjuree-Light.woff') format('woff'),
+        url('../fonts/BaiJamjuree-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bai Jamjuree';
+    src: url('../fonts/BaiJamjuree-Italic.woff2') format('woff2'),
+        url('../fonts/BaiJamjuree-Italic.woff') format('woff'),
+        url('../fonts/BaiJamjuree-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bai Jamjuree';
+    src: url('../fonts/BaiJamjuree-ExtraLightItalic.woff2') format('woff2'),
+        url('../fonts/BaiJamjuree-ExtraLightItalic.woff') format('woff'),
+        url('../fonts/BaiJamjuree-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bai Jamjuree';
+    src: url('../fonts/BaiJamjuree-SemiBoldItalic.woff2') format('woff2'),
+        url('../fonts/BaiJamjuree-SemiBoldItalic.woff') format('woff'),
+        url('../fonts/BaiJamjuree-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bai Jamjuree';
+    src: url('../fonts/BaiJamjuree-BoldItalic.woff2') format('woff2'),
+        url('../fonts/BaiJamjuree-BoldItalic.woff') format('woff'),
+        url('../fonts/BaiJamjuree-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+/*Default-CSS*/
+input[type="file"]::-webkit-file-upload-button {
+    cursor: pointer;
+}
+input[type="file"]::-moz-file-upload-button {
+    cursor: pointer;
+}
+input[type="file"]::-ms-file-upload-button {
+    cursor: pointer;
+}
+input[type="file"]::-o-file-upload-button {
+    cursor: pointer;
+}
+input[type="file"] {
+    cursor: pointer;
+}
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+html body {
+    margin: 0;
+    font-family: 'Bai Jamjuree';
+    padding-top: 180px;
+}
+*::-moz-selection {
+    color: var(--white);
+    background: #000;
+}
+*::-webkit-selection {
+    color: var(--white);
+    background: #000;
+}
+*::-webkit-input-placeholder {
+    color: #5b6770;
+    opacity: 1;
+}
+*:-moz-placeholder {
+    color: #5b6770;
+    opacity: 1;
+}
+*::-moz-placeholder {
+    color: #5b6770;
+    opacity: 1;
+}
+
+*:-ms-input-placeholder {
+    color: #5b6770;
+    opacity: 1;
+}
+
+a,
+div a:hover,
+div a:active,
+div a:focus,
+button {
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+a,
+span,
+div a:hover,
+div a:active,
+button {
+    text-decoration: none;
+}
+*::after,
+*::before,
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+    display: block;
+}
+
+ul,
+ul li,
+ol,
+li {
+    list-style: outside none none;
+    font-family: 'Bai Jamjuree';
+}
+body ul {
+    margin: 0;
+    padding: 0;
+}
+
+body a {
+    outline: none;
+    color: #555;
+}
+
+body .clearfix,
+body .clear {
+    clear: both;
+    line-height: 100%;
+}
+body .clearfix {
+    height: auto;
+}
+* {
+    outline: none !important;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*.clr:after,
+ul:after,
+.clearfix:after,
+li:after {
+    clear: both;
+    display: block;
+    content: "";
+}*/
+div input,
+div select,
+div textarea,
+div button {
+    font-family: 'Bai Jamjuree';
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+    font-family: 'Bai Jamjuree';
+    line-height: 140%;
+    color: #5b6770;
+    font-weight: bold;
+    margin: 0 0 15px;
+}
+body h1 {
+    font-size: 24px;
+}
+body h2 {
+    font-size: 22px;
+}
+body h3 {
+    font-size: 18px;
+}
+body h4 {
+    font-size: 16px;
+}
+body h5 {
+    font-size: 12px;
+}
+body h6 {
+    font-size: 10px;
+}
+body h1:last-child,
+body h2:last-child,
+body h3:last-child,
+body h4:last-child,
+body h5:last-child,
+body h6:last-child {
+    margin-bottom: 0;
+}
+div select {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+div select option {
+    font-size: 13px;
+    color: #333;
+    padding: 2px 5px;
+}
+img {
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+body p {
+    color: #5b6770;
+    font-family: 'Bai Jamjuree';
+    font-size: 15px;
+    margin: 0 0 15px;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0px;
+}
+body p:empty {
+    margin: 0;
+    line-height: 0;
+}
+body p:last-child {
+    margin-bottom: 0;
+}
+p strong {
+    font-weight: bold;
+}
+
+label em {
+    color: #ff0000;
+    display: inline-block;
+    font-style: normal;
+    vertical-align: top;
+    margin-left: 5px;
+}
+.hidden {
+    display: none !important;
+}
+iframe {
+    display: block;
+}
+
+.container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.container {
+    width: 100%;
+    max-width: 1656px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+body .container .container {
+    padding-left: 0;
+    padding-right: 0;
+}
+section{
+    padding: 100px 0;
+}
+
+
+/*button*/
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+/* Buttons styles start */
+.btn,
+button {
+    display: inline-block;
+    border: none;
+    padding: 13px 26px;
+    margin: 0;
+    text-decoration: none;
+    background: #edeeee;
+    color: var(--blue);
+    font-family: 'Bai Jamjuree';
+    font-size: 20px;
+    line-height: 120%;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 400;
+    position: relative;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+}
+.btn:hover,
+.btn:focus,
+button:hover,
+button:focus {
+    background: var(--blue);
+    transition: all 0.5s ease;
+    color: var(--white);
+}
+.round-coner {
+    border-radius: 5px;
+}
+
+/* Button styles end */
+
+.header-top {
+    background-color: var(--blue);
+    padding: 16px 0;
+}
+
+.header-top ul li a{
+    font-size: 18px;
+    font-family: 'Bai Jamjuree';
+    color: var(--white);
+    font-weight: 400;
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+.baneer-area{
+    position: relative;
+}
+
+.baneer-area .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-top ul li a:hover{
+    color: var(--org);
+}
+
+.header-top ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hedre-top-bor{
+    border-right: 1px solid var(--org);
+}
+
+.header-bottom{
+    background-color: var(--perpal);
+    padding: 28px 0;
+}
+
+
+.header-bottom ul li a{
+    font-size: 18px;
+    color: var(--white);
+    display: block;
+}
+
+.header-bottom .header-bottom-left ul li {
+    border: 1px solid var(--bs-border-color);
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-left: 9px;
+    transition: all 0.5s ease 0s;
+}
+
+.header-text{
+    display: none !important;
+}
+
+.header-bottom .container .row{
+    align-items: center;
+}
+
+.baneer-main-text h1{
+    font-size: 48px;
+    color: var(--white);
+}
+
+
+.header-bottom ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.headre-bottom-left{
+    width: 100%;
+    max-width: 20%;
+}
+.headre-bottom-right {
+    width: 100%;
+    max-width: 80%;
+}
+
+.header-bottom .search-icon-logo{
+    border: none;
+    background-color: #121731;
+    border-radius: 100%;
+}
+
+.header-bottom .login-btn .blank-btn {
+    border: 1px solid var(--org);
+    border-radius: 70px;
+    padding: 8px 35px;
+}
+
+.header-bottom-right-left{
+    margin-left: 9px;
+}
+
+.headre-bottom-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.search-info ul .search-icon-info a{
+    border: none;
+    background-color: #121731;
+    border-radius: 100%;
+    height: 56px;
+    width: 56px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-icon-info{
+    border: none;
+    margin-left: 9px;
+}
+
+.search-info ul li{
+    margin-left: 9px;
+}
+
+.search-info ul .blank-btn-info{
+    border: none;
+}
+
+.blank-btn{
+    border: 1px solid var(--org);
+    border-radius: 70px;
+    padding: 18px 30px;
+}
+
+.blank-btn-info{
+    border: none;
+}
+
+.search-info ul li a{
+    color: var(--org);
+}
+
+.header-bottom-left ul li:hover{
+    background-color: var(--org);
+    border: 1px solid var(--org);
+}
+
+.blank-btn:hover{
+    background-color: var(--org);
+    color: var(--white);
+}
+
+.baneer-area {
+    background: url(../images/baneer-area.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 40%;
+}
+
+
+.Motoring-btn {
+    display: flex;
+    align-items: center;
+}
+
+.Motoring-btn .Motoring-btn-1{
+    background-color: var(--darkblue);
+    border-radius:  35px 0 0 35px;
+}
+
+.Motoring-btn-1 span a {
+    color: var(--org);
+    font-size: 20px;
+}
+
+.Motoring-btn .Motoring-btn-2{
+    background-color: var(--skyblue);
+    border-radius: 0 35px 35px 0;
+    transition: all 0.5s ease 0s;
+}
+
+.Motoring-btn-2 span a{
+    color: var(--blue);
+    font-size: 20px;
+}
+
+
+.Motoring-btn-manage{
+    padding: 18px 50px;
+}
+
+.baneer-area-text{
+    position: relative;
+}
+
+.baneer-main-text {
+    position: absolute;
+    left: 838px;
+}
+
+.help-sec {
+    background: url(../images/image-1.png);
+    background-size: 78.6%;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position-x: -1px;
+}
+
+ul.management-main {
+    margin-top: 150px;
+}
+
+.mangment-info {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-width: calc(50% - 42px);
+    margin: 0 21px;
+    background-color: var(--white);
+    width: 100%;
+}
+
+.help-bar-text {
+    text-align: center;
+    position: absolute;
+    top: 60px;
+    right: 510px;
+}
+
+.bigi-tital{
+    font-size: 48px;
+    color: var(--blue);
+}
+
+.small-tital{
+    font-size: 20px;
+    color: #565656;
+}
+
+.management-text{
+    background-color: var(--white);
+}
+
+.management-text h4 {
+    margin-bottom: 6px;
+    margin-top: 24px;
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--blue);
+}
+
+
+.management-text p{
+    font-size: 16px;
+    color: #666666;
+}
+
+.org-btn{
+    border: 1px solid var(--org);
+    border-radius: 70px;
+    padding: 8px 35px;
+    color: var(--white);
+    background-color: var(--org);
+}
+
+.org-balank-btn{
+    border: 1px solid var(--org);
+    border-radius: 70px;
+    padding: 8px 35px;
+    color: var(--org);
+}
+
+.btn-area .org-btn{
+    margin: 18px;
+}
+
+.btn-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 54px 0;
+}
+
+.motoring-management-text ul li{
+    margin-bottom: 12px;
+    color: #4B4B4B;
+}
+
+.business-assistance-text ul li{
+    margin-bottom: 12px;
+    color: #4B4B4B;
+}
+
+.package-sec{
+    background: url(../images/we-put-you-first-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.motoring-management-img img{
+    width: 100%;
+}
+
+.btn-area{
+    transition: all 0.5s ease 0s;
+}
+
+.btn-area .org-btn:hover{
+    color: var(--perpal);
+}
+
+.btn-area .org-balank-btn:hover{
+    background-color: var(--org);
+    color: var(--white);
+}
+
+.package-main-text h3{
+    color: var(--white);
+    font-size: 43px;
+}
+
+.package-main-text span{
+    color: var(--white);
+    font-size: 38px;
+    display: block;
+    margin-bottom: 22px;
+}
